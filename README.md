@@ -5,4 +5,4 @@
 - process information and store in sqlite db  
 
 
-![physical system](https://ztbochanski.github.com/embedded-gantry/images/controllers.jpg)
+![physical system](images/controllers.jpg)
