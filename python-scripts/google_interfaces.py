@@ -14,15 +14,15 @@ import os.path
 
 # scopes for authentication
 # came from google api docs
-SHEET_SCOPE = 'https://www.googleapis.com/auth/spreadsheets'
-DRIVE_SCOPE = 'https://www.googleapis.com/auth/drive'
+SHEET_SCOPE = 'https://www.googleapis.com/auth/<location>/'
+DRIVE_SCOPE = 'https://www.googleapis.com/auth/<drive>'
 
 # used for authenticating all scopes
 SCOPES = [SHEET_SCOPE, DRIVE_SCOPE]
 
 # only for testing, feel free to change these
-TEST_ID = '10wjiNcHRr0lif41Ze1oboSEAA0c45ywT6jfvwXVL5Ks'
-TEST_RANGE = 'Sheet1'
+TEST_ID = 'ID_KEY'
+TEST_RANGE = 'SHEET_NAME'
 
 # This class is inherited by DriveInterface and SheetsInterface
 # THERE IS NO REASON TO CREATE AN INSTANCE OF THIS CLASS
@@ -288,4 +288,4 @@ if __name__ == '__main__':
     fpath = os.path.join(fdir, fname)
     meta, imgb = pickle.load(open(fpath, 'rb'))
     di.upload_bytes(imgb, 'test.jpg',
-                    folder_id='19cjC1szDjCka8QRU8JRa1g0vxDMGiykQ')
+                    folder_id='FOLDER_ID')
